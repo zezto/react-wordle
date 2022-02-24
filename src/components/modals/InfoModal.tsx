@@ -18,29 +18,29 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="W"
+          value="M"
           status="correct"
         />
+        <Cell value="O" />
+        <Cell value="S" />
         <Cell value="E" />
-        <Cell value="A" />
-        <Cell value="R" />
-        <Cell value="Y" />
+        <Cell value="S" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The letter W is in the word and in the correct spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
+        <Cell value="E" />
         <Cell value="P" />
-        <Cell value="I" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="L"
+          value="H"
           status="present"
         />
         <Cell value="O" />
-        <Cell value="T" />
+        <Cell value="D" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The letter L is in the word but in the wrong spot.
@@ -48,24 +48,13 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
 
       <div className="flex justify-center mb-1 mt-4">
         <Cell value="V" />
-        <Cell value="A" />
-        <Cell value="G" />
-        <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
-        <Cell value="E" />
+        <Cell value="I" />
+        <Cell value="P" />
+        <Cell isRevealing={true} isCompleted={true} value="E" status="absent" />
+        <Cell value="R" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The letter U is not in the word in any spot.
-      </p>
-
-      <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
-        love -{' '}
-        <a
-          href="https://github.com/cwackerfuss/react-wordle"
-          className="underline font-bold"
-        >
-          check out the code here
-        </a>{' '}
       </p>
     </BaseModal>
   )
